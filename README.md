@@ -12,9 +12,10 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 ## Enunciado
 
 1. Descargar el proyecto desde https://github.com/mercadodiego/LayoutAssignment
-2. Cambiar el nombre de la aplicación para que aparezca como "Reddit Reader" en inglés y "Lector de Reddit" en castellano
-3. Cambiar el ícono de la aplicación por esta ![Alt text](/images/reddit_icon.png?raw=true "Imagen") 
-4. 
+2. Todos los textos deben aparecer tanto en inglés como en castellano
+3. Cambiar el nombre de la aplicación para que aparezca como "Reddit Reader" en inglés y "Lector de Reddit" en castellano
+4. Cambiar el ícono de la aplicación por esta ![Alt text](/images/reddit_icon.png?raw=true "Imagen") 
+5. Cambiar el nombre de paquete de famaf.unc.edu.ar.activitiesassignment a famaf.unc.edu.ar.redditreader
 
 ## Condiciones de entrega
 
