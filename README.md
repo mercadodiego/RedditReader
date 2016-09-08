@@ -15,7 +15,7 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 2. Todos los textos deben aparecer tanto en inglés como en castellano
 3. Cambiar el nombre de la aplicación para que aparezca como "Reddit Reader" en inglés y "Lector de Reddit" en castellano
 4. Cambiar el ícono de la aplicación por el de ./images/reddit_icon.png 
-5. Cambiar el nombre de paquete de famaf.unc.edu.ar.activitiesassignment a famaf.unc.edu.ar.redditreader
+5. Cambiar el nombre de paquete de ar.edu.unc.famaf.activitiesassignment a ar.edu.unc.famaf.redditreader
 6. En la vista principal debe mostrarse una vista igual a ./images/screenshot1.jpg ![Alt text](/images/screenshot1.jpg?raw=true "captura de imagen") 
 
 ## Condiciones de entrega
