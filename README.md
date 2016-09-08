@@ -13,7 +13,8 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 
 1. Descargar el proyecto desde https://github.com/mercadodiego/LayoutAssignment
 2. Cambiar el nombre de la aplicación para que aparezca como "Reddit Reader" en inglés y "Lector de Reddit" en castellano
-3. Cambiar el ícono de la aplicación por el de esta imagen ![alt text](https://bitbucket.org/mercadodiego/layoutassignment/images/reddit_icon.png "imagen")
+3. Cambiar el ícono de la aplicación por el de esta imagen ![alt text](https://camo.githubusercontent.com/b13830f5a9baecd3d83ef5cae4d5107d25cdbfbe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3732313033382f313732383830352f35336532613364382d363262352d313165332d383964312d3934376632373062646430332e706e67 "imagen")
+4. 
 
 ## Condiciones de entrega
 
