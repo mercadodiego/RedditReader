@@ -10,9 +10,10 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 
 ## Enunciado
 
-* Descargar el proyecto desde https://github.com/mercadodiego/ActivitiesAssignment
+* Descargar el tag "activities_assignment" del repositorio https://github.com/mercadodiego/RedditReader
 * En la acción del Sign inLogin invocar LoginActivity
 * Una vez finalizado, debera mostrar el nombre del usuario logueado en pantalla
+* En caso de que haya sido cancelado no debe alterar el texto que actualmente despliega
 
 ## Condiciones de entrega
 
