@@ -11,8 +11,8 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 
 ## Enunciado
 
-1. Descargar el branch "layout_assignment" del proyecto https://github.com/mercadodiego/RedditReader
-2. Todos los textos deben aparecer tanto en inglés como en castellano
+1. Descargar el tag "layout_assignment" del repositorio https://github.com/mercadodiego/RedditReader
+2. Todos los textos que despliega la aplicación deben aparecer tanto en inglés como en castellano
 3. Cambiar el nombre de la aplicación para que aparezca como "Reddit Reader" en inglés y "Lector de Reddit" en castellano
 4. Cambiar el ícono de la aplicación por el de ./images/reddit_icon.png 
 5. Cambiar el nombre de paquete de ar.edu.unc.famaf.activitiesassignment a ar.edu.unc.famaf.redditreader
