@@ -1,4 +1,4 @@
-# LayoutAssignment | Android Reddit Reader - Step 2
+# AdaptersAssignment | Android Reddit Reader - Step 3
 
 ## Contexto
 
@@ -6,17 +6,11 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 
 ## Objetivos
 
-* Conocer los principios básicos de Layouts, View y ViewGroups en Android
-* Modificar y agregar recursos gráficos y de texto a la aplicación 
+* Implementar una [https://developer.android.com/reference/android/widget/ListView.html](ListView) que obtenga su contenido desde un propio [https://developer.android.com/reference/android/widget/ArrayAdapter.html](ArrayAdapter) 
 
 ## Enunciado
 
-1. Descargar el tag "layout_assignment" del repositorio https://github.com/mercadodiego/RedditReader
-2. Todos los textos que despliega la aplicación deben aparecer tanto en inglés como en castellano
-3. Cambiar el nombre de la aplicación para que aparezca como "Reddit Reader" en inglés y "Lector de Reddit" en castellano
-4. Cambiar el ícono de la aplicación por el de ./images/reddit_icon.png 
-5. Cambiar el nombre de paquete de ar.edu.unc.famaf.activitiesassignment a ar.edu.unc.famaf.redditreader
-6. En la vista principal debe mostrarse una vista igual a ./images/screenshot1.jpg ![Alt text](/images/screenshot1.jpg?raw=true "captura de imagen") 
+1. Descargar el tag "adapters_assignment" del repositorio https://github.com/mercadodiego/RedditReader
 
 ## Condiciones de entrega
 
@@ -24,5 +18,5 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 * La entrega consistirá en indicar en que TAG fue subido el mismo 
 * No debe contener carpetas/archivos autogenerados
 * Debe compilar. De lo contrario no será considerada como una entrega valida
-* Debe desarrollarse usando Android Studio 2.1.3 (o cualquier versión superior del canal estable)
+* Debe desarrollarse usando Android Studio 2.2 (o cualquier versión superior del canal estable)
 * Conservar Minimum SDK: API Level 15 y Target SDK: API Level 23 

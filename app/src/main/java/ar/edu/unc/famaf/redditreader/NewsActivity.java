@@ -1,15 +1,13 @@
-package famaf.unc.edu.ar.activitiesassignment;
+package ar.edu.unc.famaf.redditreader;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
+
 
 public class NewsActivity extends AppCompatActivity {
 
@@ -33,8 +31,6 @@ public class NewsActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_sign_in) {
-            NewsActivityFragment newsfragment = (NewsActivityFragment)
-                    getSupportFragmentManager().findFragmentById(R.id.news_activity_fragment_id);
             TextView textView = (TextView) findViewById(R.id.loginStatusTextView);
             textView.setText("User XXXX logged in");
             return true;
