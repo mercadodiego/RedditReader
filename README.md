@@ -6,7 +6,7 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 
 ## Objetivos
 
-* Implementar una [https://developer.android.com/reference/android/widget/ListView.html](ListView) que obtenga su contenido desde un propio [https://developer.android.com/reference/android/widget/ArrayAdapter.html](ArrayAdapter) 
+* Implementar una [ListView](https://developer.android.com/reference/android/widget/ListView) que obtenga su contenido desde un propio [ArrayAdapter](https://developer.android.com/reference/android/widget/ArrayAdapter.html) 
 
 ## Enunciado
 
@@ -14,7 +14,7 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 
 ## Condiciones de entrega
 
-* Se debe trabajar en un repositorio GIT propio. Mayor información en: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+* Se debe trabajar en un repositorio GIT propio. Mayor información en: [Git-Basics-Working-with-Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 * La entrega consistirá en indicar en que TAG fue subido el mismo 
 * No debe contener carpetas/archivos autogenerados
 * Debe compilar. De lo contrario no será considerada como una entrega valida
