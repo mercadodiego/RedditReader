@@ -1,4 +1,4 @@
-package ar.edu.unc.famaf.redditreader;
+package ar.edu.unc.famaf.redditreader.ui;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -19,6 +19,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.List;
+
+import ar.edu.unc.famaf.redditreader.R;
 
 
 /**
