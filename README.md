@@ -1,4 +1,4 @@
-# Lector de Reddit (Android)
+# Android Reddit Reader
 
 ## Contexto
 
