@@ -1,8 +1,4 @@
-# Lector de Reddit - Curso básico de Android
-
-## Objetivo
-
-* Lector de Reddit básico para Android
+# Lector de Reddit (Android)
 
 ## Contexto
 
@@ -14,7 +10,7 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 2. [Layouts](https://github.com/mercadodiego/RedditReader/tree/layout_assignment)
 3. [Adapters](https://github.com/mercadodiego/RedditReader/tree/adapters_assignment)
 
-## Condiciones generales de entrega
+## Condiciones generales de cada entrega
 
 * Se debe trabajar en un repositorio GIT propio. Mayor información en: [Git-Basics-Working-with-Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 * La entrega consistirá en informar al docente el TAG correspondiente a un repositorio público del alumno
