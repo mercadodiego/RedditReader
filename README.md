@@ -1,4 +1,4 @@
-# WebServices Assignment | Android Reddit Reader - Step 4
+# WebServices Assignment | Android Reddit Reader - Step 5
 
 ## Contexto
 
@@ -22,14 +22,14 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 3. El contenido debe mostrarse el la `ListView` de la clase `NewsActivityFragment`
 4. Cuando no hay conexión a INTERNET mostrar un error que lo indique en forma de [AlertDialog](https://developer.android.com/reference/android/app/AlertDialog.html)
 
-### Tips
+## Tips
 
-* La documentación oficila de la API de Reddit está disponible en [REEDIT API](https://www.reddit.com/dev/api/)
+* La documentación oficial de la API de Reddit está disponible en [Reddit API](https://www.reddit.com/dev/api/)
 * Para realizar una llamada REST HTTP (GET) puede emplear el siguiente snippet de código
 ```Java
-HttpURLConnection conn = (HttpURLConnection) new URL("...").openConnection();
-conn.setRequestMethod("GET");
-conn.getInputStream();
+    HttpURLConnection conn = (HttpURLConnection) new URL("...").openConnection();
+    conn.setRequestMethod("GET");
+    conn.getInputStream();
 ```
  
 
