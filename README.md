@@ -10,6 +10,7 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 2. [Layouts](https://github.com/mercadodiego/RedditReader/tree/layout_assignment)
 3. [Adapters](https://github.com/mercadodiego/RedditReader/tree/adapters_assignment)
 4. [Threads](https://github.com/mercadodiego/RedditReader/tree/threads_assignment)
+5. [WebSercices](https://github.com/mercadodiego/RedditReader/tree/webServices_assignment)
 
 ## Condiciones generales de cada entrega
 
