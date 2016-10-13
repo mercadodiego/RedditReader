@@ -15,12 +15,12 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 ## Enunciado
 
 1. Crear la clase `ar.edu.unc.famaf.redditreader.backend.GetTopPostsTask` que obtenga el contenido vía HTTP en formato JSon de los primeros 50 Top posts de Reddit, lo interprete y devuelva como resultado un `List<PostModel>`
-2. El interprete de JSON debe estar definido en una nueva clase `ar.edu.unc.famaf.redditreader.backend.Parser` y debe implementar el siguiente método de entrada, empleando internamente una instancia de [JsonReader](https://developer.android.com/reference/android/util/JsonReader.html)
+2. El contenido debe mostrarse el la `ListView` de la clase `NewsActivityFragment`
+3. Cuando no hay conexión a INTERNET mostrar un error que lo indique en forma de [AlertDialog](https://developer.android.com/reference/android/app/AlertDialog.html)
+4. El interprete de JSON debe estar definido en una nueva clase `ar.edu.unc.famaf.redditreader.backend.Parser` y debe implementar el siguiente método de entrada, empleando internamente una instancia de [JsonReader](https://developer.android.com/reference/android/util/JsonReader.html)
 ```Java
     public Listing readJsonStream(InputStream in) throws IOException {....}
 ``` 
-3. El contenido debe mostrarse el la `ListView` de la clase `NewsActivityFragment`
-4. Cuando no hay conexión a INTERNET mostrar un error que lo indique en forma de [AlertDialog](https://developer.android.com/reference/android/app/AlertDialog.html)
 
 ## Tips
 
