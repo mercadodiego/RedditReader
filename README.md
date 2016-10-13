@@ -1,20 +1,43 @@
-# Android Reddit Reader
+# WebServices Assignment | Android Reddit Reader - Step 4
 
 ## Contexto
 
-El presente curso ha sido diseñado por [Diego Mercado](https://github.com/mercadodiego) para la materia optativa _"Programación en Android: Introducción"_ de la [Facultad de Astronomía, Matemática y Física (FaMAF)](http://www.famaf.unc.edu.ar/) perteneciente a la Universidad Nacional de Córdoba, Argentina. 
+El presente curso ha sido diseñado por [Diego Mercado](https://github.com/mercadodiego) para la materia optativa _"Programación en Android: Introducción"_ de la Facultad de Astronomía, Matemática y Física (FaMAF) perteneciente a la Universidad Nacional de Córdoba, Argentina. 
 
-## Guía de trabajos prácticos
+## Objetivos
 
-1. [Activities](https://github.com/mercadodiego/RedditReader/tree/activities_assignment)
-2. [Layouts](https://github.com/mercadodiego/RedditReader/tree/layout_assignment)
-3. [Adapters](https://github.com/mercadodiego/RedditReader/tree/adapters_assignment)
-4. [Threads](https://github.com/mercadodiego/RedditReader/tree/threads_assignment)
+* Realizar una llamada a un servicio REST, interpretar el Json devuelto y mostrar los resultados en pantalla. 
 
-## Condiciones generales de cada entrega
+## Pre-Requsitos
 
+* Haber completado la actividad de [threads_assignment](https://github.com/mercadodiego/RedditReader/tree/threads_assignment) 
+
+## Enunciado
+
+1. Crear la clase `ar.edu.unc.famaf.redditreader.backend.GetTopPostsTask` que obtenga el contenido vía HTTP en formato JSon de los primeros 50 Top posts de Reddit, lo interprete y devuelva como resultado un `List<PostModel>`
+2. El interprete de JSON debe estar definido en una nueva clase `ar.edu.unc.famaf.redditreader.backend.Parser` y debe implementar el siguiente método de entrada, empleando internamente una instancia de [JsonReader](https://developer.android.com/reference/android/util/JsonReader.html)
+```Java
+    public Listing readJsonStream(InputStream in) throws IOException {....}
+``` 
+3. El contenido debe mostrarse el la `ListView` de la clase `NewsActivityFragment`
+4. Cuando no hay conexión a INTERNET mostrar un error que lo indique en forma de [AlertDialog](https://developer.android.com/reference/android/app/AlertDialog.html)
+
+### Tips
+
+* La documentación oficila de la API de Reddit está disponible en [REEDIT API](https://www.reddit.com/dev/api/)
+* Para realizar una llamada REST HTTP (GET) puede emplear el siguiente snippet de código
+```Java
+HttpURLConnection conn = (HttpURLConnection) new URL("...").openConnection();
+conn.setRequestMethod("GET");
+conn.getInputStream();
+```
+ 
+
+## Condiciones generales de entrega
+
+* *No deben emplearse frameworks que no sean los provistos oficialmente por la SDK de Android*
 * Se debe trabajar en un repositorio GIT propio. Mayor información en: [Git-Basics-Working-with-Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
-* La entrega consistirá en informar al docente el TAG correspondiente a un repositorio público del alumno
+* La entrega consistirá en indicar en que TAG fue subido el mismo 
 * No debe contener carpetas/archivos autogenerados
 * Debe compilar. De lo contrario no será considerada como una entrega valida
 * Debe desarrollarse usando Android Studio 2.2 (o cualquier versión superior del canal estable)
@@ -23,4 +46,5 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 ## Licencia
 
 * [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+
 
