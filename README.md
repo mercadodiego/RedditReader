@@ -1,4 +1,4 @@
-# Persistence Assignment | Android Reddit Reader - Step 5
+# Persistence Assignment | Android Reddit Reader - Step 6
 
 ## Contexto
 
