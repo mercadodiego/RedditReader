@@ -1,4 +1,4 @@
-# WebServices Assignment | Android Reddit Reader - Step 5
+# Persistence Assignment | Android Reddit Reader - Step 5
 
 ## Contexto
 
@@ -6,32 +6,35 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 
 ## Objetivos
 
-* Realizar una llamada a un servicio REST, interpretar el Json devuelto y mostrar los resultados en pantalla. 
+* Implementar una pequeña base de datos SQLite 
 
 ## Pre-Requsitos
 
-* Haber completado la actividad de [threads_assignment](https://github.com/mercadodiego/RedditReader/tree/threads_assignment) 
+* Haber completado la actividad de [webservices_assignment](https://github.com/mercadodiego/RedditReader/tree/webservices_assignment) 
 
 ## Enunciado
 
-1. Crear la clase `ar.edu.unc.famaf.redditreader.backend.GetTopPostsTask` que obtenga el contenido vía HTTP en formato JSon de los primeros 50 Top posts de Reddit, lo interprete y devuelva como resultado un `List<PostModel>`
-2. El contenido debe mostrarse el la `ListView` de la clase `NewsActivityFragment`
-3. Cuando no hay conexión a INTERNET mostrar un error que lo indique en forma de [AlertDialog](https://developer.android.com/reference/android/app/AlertDialog.html)
-4. El interprete de JSON debe estar definido en una nueva clase `ar.edu.unc.famaf.redditreader.backend.Parser` y debe implementar el siguiente método de entrada, empleando internamente una instancia de [JsonReader](https://developer.android.com/reference/android/util/JsonReader.html) que devuelva una nueva clase llamada `ar.edu.unc.famaf.redditreader.model.Listing` (acorde a la estructura de objetos propia de la API de Reddit)
-```Java
-    public Listing readJsonStream(InputStream in) throws IOException {....}
-``` 
+1. La clase `ar.edu.unc.famaf.redditreader.backend.GetTopPostsTask` debe implementar ahora el siguiente comportamiento
+ 1. Invocar al servicio REST de Reddit para obtener los primeros 50 TOP posts
+ 2. Persistir los resultados en una base de datos interna 
+ 3. Devolver los resultados desde la base de datos interna
+ 4. En caso de que no haya conexión a internet, se deben devolver los últimos resultados obtenidos desde la base de datos interna 
+2. La base de datos interna debe estar implementada en una nueva clase: `ar.edu.unc.famaf.redditreader.backend.RedditDBHelper` de tipo `SQLiteOpenHelper`
+ * Solo almacena los últimos 50 posts. El resto deben borrarse.
+3. Los _thumbnails/preview_ a medida que se descargan deben también almacenarse. Recordar que pueden almacenarse como un arreglo de bytes:
 
-## Tips
-
-* La documentación oficial de la API de Reddit está disponible en [Reddit API](https://www.reddit.com/dev/api/)
-* Para realizar una llamada REST HTTP (GET) puede emplear el siguiente snippet de código
 ```Java
-    HttpURLConnection conn = (HttpURLConnection) new URL("...").openConnection();
-    conn.setRequestMethod("GET");
-    conn.getInputStream();
+   public static byte[] getBytes(Bitmap bitmap)
+   {
+        ByteArrayOutputStream stream=new ByteArrayOutputStream();
+        bitmap.compress(CompressFormat.JPEG,0, stream);
+        return stream.toByteArray();
+   }
+   public static Bitmap getImage(byte[] image)
+   {
+        return BitmapFactory.decodeByteArray(image, 0, image.length);
+   }
 ```
- 
 
 ## Condiciones generales de entrega
 
