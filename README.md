@@ -15,7 +15,7 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 ## Enunciado
 
 
-1. Implementar el siguiente método en nuestra clase `ar.edu.unc.famaf.redditreader.backend.Backend`
+1-) Implementar el siguiente método en nuestra clase `ar.edu.unc.famaf.redditreader.backend.Backend`
 ```Java
 public void getNextPosts(final PostsIteratorListener listener) {...}
 ```
@@ -29,7 +29,7 @@ public interface PostsIteratorListener {
 ```
 * La misma debe invocar al método nextPosts devolviendo los próximos 5 posts. Internamente la primera vez consulta al servicio web y persiste los primeros 50 resultados. Una vez que llega a dicho límite debe consultar por los próximos 50 posts y así sucesivamente.
  
-2. Crear la clase `ar.edu.unc.famaf.redditreader.backend.EndlessScrollListener`: 
+2-) Crear la clase `ar.edu.unc.famaf.redditreader.backend.EndlessScrollListener`: 
 ```Java
 import android.widget.AbsListView; 
 
