@@ -11,6 +11,7 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 3. [Adapters](https://github.com/mercadodiego/RedditReader/tree/adapters_assignment)
 4. [Threads](https://github.com/mercadodiego/RedditReader/tree/threads_assignment)
 5. [WebServices](https://github.com/mercadodiego/RedditReader/tree/webServices_assignment)
+6. [Persistence](https://github.com/mercadodiego/RedditReader/tree/persistence_assignment)
 
 ## Condiciones generales de cada entrega
 
