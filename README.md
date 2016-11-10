@@ -30,6 +30,19 @@ public interface OnPostItemSelectedListener{
 
 4-) Mostrar el título del post en un `TextView`
 
+
+### Segunda parte
+
+1-) Mostrar el siguiente detalle: 
+* Subrredit al que pertenece
+* Fecha
+* Titulo 
+* Usuario
+* Preview (si está presente)
+* Link a sitio web (si corresponde)
+
+2-) Al seleccionar link el mismo debe abrir en una nueva actividad con una (WebView)[https://developer.android.com/reference/android/webkit/WebView.html] que despliegue el contenido web, sin abandonar la aplicación 
+
 ## Tip
 
 * Para poder emplear PostModel como parte del Intent, dicho objeto debe implementar la interfaz `Serializable` y emplear los métodos `putExtra(String name, Serializable value)` y `Serializable getSerializableExtra(String name)` de la clase `android.content.Intent`
