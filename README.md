@@ -1,4 +1,4 @@
-# Post Detail Assignment | Android Reddit Reader - Step 8
+# Final Assignment | Android Reddit Reader - Final Step
 
 ## Contexto
 
@@ -6,46 +6,38 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 
 ## Objetivos
 
-* Al seleccionar una celda de la lista, mostrar el detalle del post.
+* Integrar todos los conocimientos aprehendidos durante el curso 
+* Incorporar nuevos componentes sin conocimiento previo 
+* Reutilizar código
 
 ## Pre-Requsitos
 
-* Haber completado la actividad de [endlessScrolling_assignment](https://github.com/mercadodiego/RedditReader/tree/endlessScrolling_assignment) 
+* Haber cumplido con el 80% de la asistencia a clases
+* Haber completado, presentado y aprobado todas las actividades previas:
+  * [Activities](https://github.com/mercadodiego/RedditReader/tree/activities_assignment)
+  * [Layouts](https://github.com/mercadodiego/RedditReader/tree/layout_assignment)
+  * [Adapters](https://github.com/mercadodiego/RedditReader/tree/adapters_assignment)
+  * [Threads](https://github.com/mercadodiego/RedditReader/tree/threads_assignment)
+  * [WebServices](https://github.com/mercadodiego/RedditReader/tree/webServices_assignment)
+  * [Persistence](https://github.com/mercadodiego/RedditReader/tree/persistence_assignment)
+  * [EndlessScrolling](https://github.com/mercadodiego/RedditReader/tree/endlessScrolling_assignment)
+  * [PostDetail](https://github.com/mercadodiego/RedditReader/tree/post_detail_assignment)
 
 ## Enunciado 
 
-### Primera parte
+* Implementar **una sola** de las siguientes características:
+ 1. Desplegar los comentarios empleando un scroll infinito de a 50 noticias (no hace falta persistirlo). Considerar incorporar una sangria o algo que indique el nivel del subarbol
+ 2. Emplear un [TabHost](https://developer.android.com/reference/android/widget/TabHost.html) o [NavigationDrawer](https://developer.android.com/training/implementing-navigation/nav-drawer.html?hl=es-419) que muestre los siguientes tipos de noticias: _hot_, _new_ y _top_
+ 3. Implementar login/logout del usuario y permitir hacer un _upVote_ o _downVote_ de un post ya sea de la lista general o desde el detalle de un post
+ 
+## Criterios de evaluación 
 
-1-) Para "escuchar" por los eventos de selección de celda debe reimplementar el método `ListView.setOnItemClickListener(OnItemClickListener listener)`
-
-2-) Emplear la siguiente interfaz para la comunicación entre `NewsActivity` y `NewsActivityFragment` 
-  
-```Java
-public interface OnPostItemSelectedListener{
-    void onPostItemPicked(PostModel post);
-}
-```
-
-3-) La actividad de detalle debe llevar de nombre `ar.edu.unc.famaf.redditreader.ui.NewsDetailActivity`, con su correspondiente fragmento `ar.edu.unc.famaf.redditreader.ui.NewsDetailActivityFragment`
-
-4-) Mostrar el título del post en un `TextView`
-
-
-### Segunda parte
-
-1-) Mostrar el siguiente detalle: 
-* Subrredit al que pertenece
-* Fecha
-* Titulo 
-* Usuario
-* Preview (si está presente)
-* Link a sitio web (si corresponde)
-
-2-) Al seleccionar link el mismo debe abrir en una nueva actividad con una [WebView](https://developer.android.com/reference/android/webkit/WebView.html) que despliegue el contenido web, sin abandonar la aplicación 
-
-## Tip
-
-* Para poder emplear PostModel como parte del Intent, dicho objeto debe implementar la interfaz `Serializable` y emplear los métodos `putExtra(String name, Serializable value)` y `Serializable getSerializableExtra(String name)` de la clase `android.content.Intent`
+* Funcionalidad adecuada
+* Reutilización de código
+* Tolerancia a errores
+* Nivel de acoplamiento y cohesión de los componentes
+* Haber contemplado las correcciones las observaciones realizadas en la evaluación de cada actividad práctica
+* Características/Funcionalidades adicionales incorporadas en la aplicación si las hubiese
 
 ## Condiciones generales de entrega
 
