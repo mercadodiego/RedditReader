@@ -14,6 +14,7 @@ El presente curso ha sido diseñado por [Diego Mercado](https://github.com/merca
 6. [Persistence](https://github.com/mercadodiego/RedditReader/tree/persistence_assignment)
 7. [EndlessScrolling](https://github.com/mercadodiego/RedditReader/tree/endlessScrolling_assignment)
 8. [PostDetail](https://github.com/mercadodiego/RedditReader/tree/post_detail_assignment)
+9. [Final](https://github.com/mercadodiego/RedditReader/tree/final_assignment)
 
 ## Condiciones generales de cada entrega
 
